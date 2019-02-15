@@ -1,3 +1,5 @@
+require "pry"
+
 class Deli
 @@ticket_number=1
 
@@ -30,3 +32,4 @@ end
 
 new_deli = Deli.new 
 line = new_deli.take_a_number([])
+binding.pry 
