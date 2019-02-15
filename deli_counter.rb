@@ -16,9 +16,9 @@ def line (deli)
 end
 
 def take_a_number(deli)
-  @@ticket_number += 1 
   deli.push(@@ticket_number)
   puts "Welcome, your ticket number is " + @@ticket_number.to_s + " and you are " + deli.count.to_s + " in line."
+  @@ticket_number += 1 
 end
   
 def now_serving(deli)
