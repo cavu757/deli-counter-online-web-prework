@@ -1,3 +1,6 @@
+class deli
+@@ticket_number=1
+
 def line (deli)
   if deli.length == 0 
     puts "The line is currently empty."
@@ -10,9 +13,9 @@ def line (deli)
   end
 end
 
-def take_a_number(deli, name)
-  deli.push(name)
-  puts "Welcome, #{name}. You are number " + deli.count.to_s + " in line."
+def take_a_number(deli)
+  deli.push(@@ticket_number)
+  puts "Welcome, your ticket number is " + @@ticket_number + "and you are " + deli.count + " in line."
 end
   
 def now_serving(deli)
@@ -22,3 +25,8 @@ def now_serving(deli)
     puts "Currently serving " + deli.shift + "."
   end
 end
+
+end 
+
+new_deli = Deli.new 
+line = new_deli.take_a_number([])
