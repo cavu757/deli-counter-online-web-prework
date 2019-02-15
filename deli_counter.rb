@@ -1,4 +1,4 @@
-class deli
+class Deli
 @@ticket_number=1
 
 def line (deli)
